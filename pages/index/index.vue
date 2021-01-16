@@ -40,7 +40,7 @@ export default {
 		//#endif
 		//#ifdef MP-WEIXIN
 		let tabId = e.tabId ? parseInt(e.tabId) : 0
-		this.onSubscribe()
+		// this.onSubscribe()
 		//#endif
 		for(let i in this.tabs){
 			if(tabId == this.tabs[i].tabId){
@@ -260,6 +260,22 @@ export default {
 				  path: this.couponList[i].minapp.path,
 				  success(res) {
 					// 打开成功
+				  }
+				})
+			}else{
+				// wx.navigateTo({
+				// 	url: this.couponList[i].url
+				// });
+				wx.setClipboardData({
+				  data: this.couponList[i].url,
+				  success: function (res) {
+					wx.getClipboardData({
+					  success: function (res) {
+						wx.showToast({
+						  title: '已复制淘口令'
+						})
+					  }
+					})
 				  }
 				})
 			}

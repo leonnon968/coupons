@@ -17,6 +17,7 @@ export default {
 		api: {
 			home: 'https://f331e0ff-111a-4fef-af03-479dc1d94fef.bspapp.com/http/api/home',
 			openid: 'https://f331e0ff-111a-4fef-af03-479dc1d94fef.bspapp.com/http/api/openid',
+			search: 'https://f331e0ff-111a-4fef-af03-479dc1d94fef.bspapp.com/http/api/search'
 		},
 		subscribe: 'https://f331e0ff-111a-4fef-af03-479dc1d94fef.bspapp.com/http/subscribe',
 		openid: '',
@@ -27,8 +28,7 @@ export default {
 			var messages = [{
 				title: '美团饿了么大额红包，每日可领！',
 				path: '/pages/index/index',
-				imageUrl : 'https://upload-images.jianshu.io/upload_images/302100-d28345a30e3c51c7.png',
-				imageUrl : 'https://upload-images.jianshu.io/upload_images/302100-d28345a30e3c51c7.png',
+				imageUrl : 'https://upload-images.jianshu.io/upload_images/302100-d28345a30e3c51c7.png'
 			},{
 				title: '吃了这么多年外卖，你知道这个秘密吗？',
 				path: '/pages/index/index',
