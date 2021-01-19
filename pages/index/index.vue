@@ -52,6 +52,9 @@ export default {
 	onShareAppMessage(res) {
 		return getApp().shareConfig()
 	},
+	onShareTimeline(res) {
+		return getApp().shareConfig()
+	},
 	methods: {
 		onSubscribe() {
 			try {
